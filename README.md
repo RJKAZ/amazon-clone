@@ -12,3 +12,5 @@ at the 14:13 mark - everything good except the image which won't display.
 Left off on Section 5 - finished part 10 (load products from backend) - All is working good so far. 
 
 Left off on Section 6 - Part 14 - (Handle Add to Cart Event) - at the 6:56 mark (about halfway)
+
+Finished Section 6 - Starting 7
