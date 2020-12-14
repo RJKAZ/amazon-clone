@@ -14,3 +14,5 @@ Left off on Section 5 - finished part 10 (load products from backend) - All is w
 Left off on Section 6 - Part 14 - (Handle Add to Cart Event) - at the 6:56 mark (about halfway)
 
 Finished Section 6 - Starting 7
+
+Finished Section 7 - Starting Section 8 with MongoDB
