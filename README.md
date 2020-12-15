@@ -3,3 +3,5 @@ making a clone of amazon
 
 Finished Section 7 - will being Section 8 next about adding User Authentification 
 
+Left off on Section 8 - Part 22 - Implement Sign-in Action
+
