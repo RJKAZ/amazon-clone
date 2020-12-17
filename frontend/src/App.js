@@ -11,6 +11,12 @@ import SigninScreen from './screens/SigninScreen';
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  const signoutHandler = () => {
+    
+  }
+  }
 
   return (
     <BrowserRouter>
@@ -26,8 +32,23 @@ function App() {
               <span className="badge">{cartItems.length}</span>
             )}
             </Link>
+            {
+              userInfo ? (
+                <div className="dropdown">
+                <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                </Link>
+                <ul className="dropdown-content">
+                  <Link to="#signout" onClick={signoutHandler}>
+                    Sign Out
+                    </Link>
+                </ul>
+                </div>
+              ) :  (
+                <Link to="/signin">Sign In</Link>
+              )
+            }
           
-          <Link to="/signin">Sign In</Link>
+          
         </div>
       </header>
       <main>
