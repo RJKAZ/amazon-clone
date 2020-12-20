@@ -18,3 +18,5 @@ In the Product Router file in backend, I wrote res.send(products) when it needed
 4 hours of troubleshooting and pulling my hair out over a damn " s " . 
 
 lol...."It is the way" I suppose. 
+
+left off on Section 9 - 24 - "Create Shipping Screen" at 9:36 mark
