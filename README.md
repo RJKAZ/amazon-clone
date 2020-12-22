@@ -19,4 +19,4 @@ In the Product Router file in backend, I wrote res.send(products) when it needed
 
 lol...."It is the way" I suppose. 
 
-left off on Section 9 - 24 - "Create Shipping Screen" at 9:36 mark
+left off on Section 9 - 25 - "Design Place Order Screen" at 8:37 mark
