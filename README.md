@@ -20,3 +20,10 @@ In the Product Router file in backend, I wrote res.send(products) when it needed
 lol...."It is the way" I suppose. 
 
 left off on Section 9 - just finished Part 28, but there is an errpr in the PlaceOrderScreen.js at line 34, a syntax error, but I can't figure out whats wrong, will do so later after a rest. 
+
+
+12/28/20 - ARGH...again scratching my head out. Got an error at the end of the place order function. 
+
+res.status(...)send.send is not a function
+
+2 hours today trying to figure this problem out and thus far no luck. 
