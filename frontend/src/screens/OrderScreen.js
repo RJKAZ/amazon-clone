@@ -34,6 +34,15 @@ export default function OrderScreen(props) {
                   {order.shippingAddress.city}, {order.shippingAddress.postalCode}
                   ,{order.shippingAddress.country}
                 </p>
+                {order.isDelivered ? ( 
+                <MessageBox variant="success">
+                  Delivered at {order.deliveredAt}
+                  </MessageBox>
+                ) : (
+              <MessageBox variant="danger">
+                Not Delivered
+                </MessageBox>
+                )}
               </div>
             </li>
             <li>
@@ -42,6 +51,15 @@ export default function OrderScreen(props) {
                 <p>
                   <strong>Method:</strong> {order.paymentMethod}
                 </p>
+                {order.isPaid ? ( 
+                <MessageBox variant="success">
+                  Paid at {order.paidAt}
+                  </MessageBox>
+                ) : (
+              <MessageBox variant="danger">
+                Not Paid
+                </MessageBox>
+                )}
               </div>
             </li>
             <li>
@@ -109,18 +127,8 @@ export default function OrderScreen(props) {
                   </div>
                 </div>
               </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={placeOrderHandler}
-                  className="primary block"
-                  disabled={cart.cartItems.length === 0}
-                >
-                  Place Order
-                </button>
-              </li>
-              {loading && <LoadingBox></LoadingBox>}
-              {error && <MessageBox variant="danger">{error}</MessageBox>}
+              
+            
             </ul>
           </div>
         </div>

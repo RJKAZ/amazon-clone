@@ -32,4 +32,4 @@ res.status(...)send.send is not a function
 
 No I can move on to the next part....finally. 
 
-left off at the 14:45 mark in the video
+finished Part 29 - onwards to Part 30 which introduces Pay Pal
