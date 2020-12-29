@@ -31,3 +31,5 @@ res.status(...)send.send is not a function
 12/29/20 update- Finally...after another hour of trying to find the bug...thinking it was somewhere in the frontend, it was really in the backend. had an extra .send towards the end of the orderROuter.js file.
 
 No I can move on to the next part....finally. 
+
+left off at the 14:45 mark in the video
