@@ -24,7 +24,7 @@ orderRouter.post(
     });
     const createdOrder = await order.save();
     res
-    .status(201).send
+    .status(201)
     .send({ message: 'New Order Created', order: createdOrder });
   }
 })
