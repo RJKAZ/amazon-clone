@@ -32,4 +32,4 @@ res.status(...)send.send is not a function
 
 No I can move on to the next part....finally. 
 
-finished Part 29 - onwards to Part 30 which introduces Pay Pal
+finished Part 30 - next to Part 31  Pay Order - also, figure out how to update my paypal developer account.
