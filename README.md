@@ -33,3 +33,7 @@ res.status(...)send.send is not a function
 No I can move on to the next part....finally. 
 
 finished Part 30 - next to Part 31  Pay Order - also, figure out how to update my paypal developer account.
+
+Finished Part 31 - Pay Order, but its not working. It's stuck on the infinite loop still. Double check all code from this lesson, and again, it might have to do witht he developer account issue with paypal and me not having updated it.
+
+Starting Section 10: User Profiles and Orders
