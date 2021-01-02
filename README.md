@@ -37,3 +37,5 @@ finished Part 30 - next to Part 31  Pay Order - also, figure out how to update m
 Finished Part 31 - Pay Order, but its not working. It's stuck on the infinite loop still. Double check all code from this lesson, and again, it might have to do witht he developer account issue with paypal and me not having updated it.
 
 Starting Section 10: User Profiles and Orders
+
+2 hours trouble shooting the loop problem...I've tested the source code example and it works, so the problem is def somewhere on my end, but so far cannot find it. 

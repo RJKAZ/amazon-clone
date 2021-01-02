@@ -20,7 +20,7 @@ orderRouter.post(
         shippingPrice: req.body.shippingPrice,
         taxPrice: req.body.taxPrice,
         totalPrice: req.body.totalPrice,
-        user: req.user._id
+        user: req.user._id,
       });
       const createdOrder = await order.save();
       res
@@ -30,14 +30,17 @@ orderRouter.post(
   })
 );
 
-orderRouter.get('/:id', isAuth, expressAsyncHandler(async (req, res) => {
-  const order = await Order.findById(req.params.id);
-  if (order) {
-    res.send(order);
-  } else {
-    res.status(404).send({ message: 'Order Not Found' });
-  }
-})
+orderRouter.get(
+  '/:id',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    const order = await Order.findById(req.params.id);
+    if (order) {
+      res.send(order);
+    } else {
+      res.status(404).send({ message: 'Order Not Found' });
+    }
+  })
 );
 
 orderRouter.put(
@@ -55,9 +58,9 @@ orderRouter.put(
         email_address: req.body.email_address,
       };
       const updatedOrder = await order.save();
-      res.send({ message: 'Order Paid', order: updatedOrder});
+      res.send({ message: 'Order Paid', order: updatedOrder });
     } else {
-      res.status(404).send({ message: 'Order Not Found'});
+      res.status(404).send({ message: 'Order Not Found' });
     }
   })
 );
