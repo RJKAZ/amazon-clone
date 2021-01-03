@@ -13,12 +13,12 @@ import {
 } from "../constants/orderConstants"
 
 export const createOrder = (order) => async (dispatch, getState) => {
-  dispatch({
-   type: ORDER_CREATE_REQUEST, payload: order });
+  dispatch({ type: ORDER_CREATE_REQUEST, payload: order });
   try {
-    const {userSignin:{ userInfo},
+    const {
+      userSignin:{ userInfo },
     } = getState();
-    const {data}= await Axios.post('/api/orders', order, {
+    const { data } = await Axios.post('/api/orders', order, {
       headers: {
         Authorization: `Bearer ${userInfo.token}`,
       },
@@ -59,16 +59,16 @@ export const detailsOrder = (orderId) => async (dispatch, getState) =>{
 export const payOrder = (order, paymentResult) => async (
   dispatch,
   getState
-) =>{
-  dispatch({type: ORDER_PAY_REQUEST, payload: { order, paymentResult} });
+) => {
+  dispatch({ type: ORDER_PAY_REQUEST, payload: { order, paymentResult} });
   const {
-    userSignin: { userInfo},
+    userSignin: { userInfo },
   } = getState();
   try {
     const { data } = Axios.put(`/api/orders/${order._id}/pay`, paymentResult, {
-      headers: {Authorization: `Bearer ${userInfo.token}`},
+      headers: { Authorization: `Bearer ${userInfo.token}`},
     });
-    dispatch({type: ORDER_PAY_SUCCESS, payload: data });
+    dispatch({ type: ORDER_PAY_SUCCESS, payload: data });
 
   } catch (error) {
     const message = 

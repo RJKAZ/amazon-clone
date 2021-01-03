@@ -3,23 +3,20 @@ import bcrypt from 'bcryptjs';
 const data = {
   users: [
     {
-      
-      name: 'RJ',
-      email: 'rjkaz@home.com',
-      password: bcrypt.hashSync('lunchmeat', 8),
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
       isAdmin: true,
     },
     {
-      name: 'Andrew',
-      email: 'andrewman23@gmail.com',
-      password: bcrypt.hashSync('12345', 8),
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
       isAdmin: false,
     },
-
   ],
   products: [
     {
-      
       name: 'Nike Slim Shirt',
       category: 'Shirts',
       image: '/images/p1.jpg',
@@ -31,11 +28,10 @@ const data = {
       description: 'high quality product',
     },
     {
-      
       name: 'Adidas Fit Shirt',
       category: 'Shirts',
       image: '/images/p2.jpg',
-      price: 90,
+      price: 100,
       countInStock: 20,
       brand: 'Adidas',
       rating: 4.0,
@@ -43,7 +39,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      
       name: 'Lacoste Free Shirt',
       category: 'Shirts',
       image: '/images/p3.jpg',
@@ -55,20 +50,18 @@ const data = {
       description: 'high quality product',
     },
     {
-      
       name: 'Nike Slim Pant',
       category: 'Pants',
       image: '/images/p4.jpg',
       price: 78,
       countInStock: 15,
       brand: 'Nike',
-      rating: 4.2,
+      rating: 4.5,
       numReviews: 14,
       description: 'high quality product',
     },
     {
-      
-      name: 'Puma Slim Pants',
+      name: 'Puma Slim Pant',
       category: 'Pants',
       image: '/images/p5.jpg',
       price: 65,
@@ -79,7 +72,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      
       name: 'Adidas Fit Pant',
       category: 'Pants',
       image: '/images/p6.jpg',
@@ -90,7 +82,6 @@ const data = {
       numReviews: 15,
       description: 'high quality product',
     },
-  ]
+  ],
 };
-
 export default data;

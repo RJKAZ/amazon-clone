@@ -39,3 +39,5 @@ Finished Part 31 - Pay Order, but its not working. It's stuck on the infinite lo
 Starting Section 10: User Profiles and Orders
 
 2 hours trouble shooting the loop problem...I've tested the source code example and it works, so the problem is def somewhere on my end, but so far cannot find it. 
+
+another hour trying to touble shoot the loop problem and still no luck. I can however safely rule out the backend. I swaped my entire backend for the demo one and that didn't solve the problem. I need to attemp this with the front end.
