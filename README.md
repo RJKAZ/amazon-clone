@@ -41,3 +41,13 @@ Starting Section 10: User Profiles and Orders
 2 hours trouble shooting the loop problem...I've tested the source code example and it works, so the problem is def somewhere on my end, but so far cannot find it. 
 
 another hour trying to touble shoot the loop problem and still no luck. I can however safely rule out the backend. I swaped my entire backend for the demo one and that didn't solve the problem. I need to attemp this with the front end.
+
+lol...took about a week, but I finally found the cursed error.
+
+In the OrderScreen.js file, at line 37......
+
+if (!order || successPay || (order && order._id !== order.Id)) {
+
+the problem was the end....it should have been   !== orderId)) {  - it was literally a damn period that messed my code up for about a week now. 
+
+Life of a Coder I guess...lol

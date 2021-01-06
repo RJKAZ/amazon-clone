@@ -18,10 +18,9 @@ export default function OrderScreen(props) {
   const {
     loading: loadingPay,
     error: errorPay,
-    success: successPay
+    success: successPay,
   } = orderPay;
   const dispatch = useDispatch();
-
   useEffect(() => {
     const addPayPalScript = async () => {
       const { data } = await Axios.get('/api/config/paypal');
@@ -34,8 +33,9 @@ export default function OrderScreen(props) {
       };
       document.body.appendChild(script);
     };
-    if (!order || successPay || (order && order._id !== order.Id)) {
-      dispatch({type: ORDER_PAY_RESET});
+
+    if (!order || successPay || (order && order._id !== orderId)) {
+      dispatch({ type: ORDER_PAY_RESET });
       dispatch(detailsOrder(orderId));
     } else {
       if (!order.isPaid) {
@@ -51,7 +51,7 @@ export default function OrderScreen(props) {
   }, [dispatch, order, orderId, sdkReady, successPay]);
 
   const successPaymentHandler = (paymentResult) => {
-    dispatch(payOrder(order, paymentResult))
+    dispatch(payOrder(order, paymentResult));
   };
 
   return loading ? (
@@ -70,8 +70,9 @@ export default function OrderScreen(props) {
                     <p>
                       <strong>Name:</strong> {order.shippingAddress.fullName} <br />
                       <strong>Address: </strong> {order.shippingAddress.address},
-                  {order.shippingAddress.city}, {order.shippingAddress.postalCode}
-                  ,{order.shippingAddress.country}
+                  {order.shippingAddress.city}, {' '}
+                  {order.shippingAddress.postalCode},
+                  {order.shippingAddress.country}
                     </p>
                     {order.isDelivered ? (
                       <MessageBox variant="success">
