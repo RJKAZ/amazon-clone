@@ -51,3 +51,5 @@ if (!order || successPay || (order && order._id !== order.Id)) {
 the problem was the end....it should have been   !== orderId)) {  - it was literally a damn period that messed my code up for about a week now. 
 
 Life of a Coder I guess...lol
+
+left off on Part 32  (Display Orders History) at the 10:15 mark
