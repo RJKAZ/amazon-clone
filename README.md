@@ -55,3 +55,7 @@ Life of a Coder I guess...lol
 left off on Part 32  (Display Orders History) at the 10:15 mark
 
 finished Part 32- With no errors LOL
+
+finished Part 34 , and finished Section 10
+
+Starting Section 11: Admin Prodcuts (54% done)

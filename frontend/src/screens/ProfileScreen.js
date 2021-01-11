@@ -15,7 +15,7 @@ export default function ProfileScreen() {
   const { userInfo } = userSignin;
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
-  const userUpdateProfile = useSelector(state => state.userUpdateProfile);
+  const userUpdateProfile = useSelector((state) => state.userUpdateProfile);
   const { 
     success: successUpdate,
     error: errorUpdate, 
@@ -29,9 +29,7 @@ export default function ProfileScreen() {
     } else {
       setName(user.name);
       setEmail(user.email);
-
     }
-    dispatch(detailsUser(userInfo._id));
   }, [dispatch, userInfo._id, user]);
   const submitHandler = (e) => {
     e.preventDefault();

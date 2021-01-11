@@ -3,7 +3,7 @@ import expressAsyncHandler from 'express-async-handler';
 import bcrypt from 'bcryptjs';
 import data from '../data.js';
 import User from '../models/userModel.js';
-import { generateToken } from '../utils.js';
+import { generateToken, isAuth } from '../utils.js';
 
 const userRouter = express.Router();
 
@@ -71,7 +71,7 @@ userRouter.get(
 userRouter.put(
 '/profile', 
 isAuth, 
-expressAsyncHandler(aysnc(req, res) => {
+expressAsyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
     user.name = req.body.name || user.name;
