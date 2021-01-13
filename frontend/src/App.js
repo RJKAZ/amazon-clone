@@ -41,8 +41,7 @@ function App() {
               <span className="badge">{cartItems.length}</span>
             )}
             </Link>
-            {
-              userInfo ? (
+            {userInfo ? (
                 <div className="dropdown">
                 <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '}
                 </Link>
@@ -64,6 +63,28 @@ function App() {
                 <Link to="/signin">Sign In</Link>
               )
             }
+            {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <Link to="#admin">
+                  Admin <i className ="fa fa-caret-down"></i>
+                  </Link>
+                  <ul className="dropdown-content">
+                    <li>
+                      <Link to ="/dashboard">Dashboard</Link>
+                    </li>
+                    <li>
+                      <Link to ="/prodcutlist">Products</Link>
+                    </li>
+                    <li>
+                      <Link to ="/orderList">Orders</Link>
+                    </li>
+                    <li>
+                      <Link to ="/userList">Users</Link>
+                    </li>
+
+                  </ul>
+                  </div>
+            )}
           
           
         </div>
