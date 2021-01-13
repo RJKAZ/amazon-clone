@@ -59,3 +59,6 @@ finished Part 32- With no errors LOL
 finished Part 34 , and finished Section 10
 
 Starting Section 11: Admin Prodcuts (54% done)
+
+finished part 37: will start on Part 37 - Create Product -  next (still have to figure out how to actually set up the admin account)
+
