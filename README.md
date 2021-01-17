@@ -65,3 +65,5 @@ finished part 37: will start on Part 37 - Create Product -  next (still have to 
 Finished Part 37, but since I can't login to an Admin account, I can't really verify if any of this new code is working (beyond the app itself working fine)
 
 I posted a question to the Udemy instructor on how to create new admin accounts, hopefully he'll respond before I finish this section. 
+
+Finished Part 38, still no luck with getting the admin to work. :(
