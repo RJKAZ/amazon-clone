@@ -69,3 +69,5 @@ I posted a question to the Udemy instructor on how to create new admin accounts,
 Finished Part 38, still no luck with getting the admin to work. :(
 
 AAHA!!! figured out the Admin Problem. I had to go into the MongoDB compass and....while the admin account I created I couldn't remeber the password for...but I was able in Compass to assign the admin to another user account and that did the trick. Admin features now fully work. :)
+
+Finished Part 39, however the Product Edit Screen won't work. Troubleshoot later
