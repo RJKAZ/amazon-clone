@@ -71,3 +71,5 @@ Finished Part 38, still no luck with getting the admin to work. :(
 AAHA!!! figured out the Admin Problem. I had to go into the MongoDB compass and....while the admin account I created I couldn't remeber the password for...but I was able in Compass to assign the admin to another user account and that did the trick. Admin features now fully work. :)
 
 Finished Part 39, however the Product Edit Screen won't work. Troubleshoot later
+
+And Troubleshooted, had a products instead of product in the bottom of the return portion of the productListScreen.js. Edit Screen now works (but requires a refresh, I'll fix that later.)

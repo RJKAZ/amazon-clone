@@ -6,7 +6,7 @@ import MessageBox from '../components/MessageBox';
 import { PRODUCT_CREATE_RESET } from '../constants/productConstants';
 
 export default function ProductListScreen(props) {
-  const productList = useSelector(state => state.productList)
+  const productList = useSelector((state) => state.productList)
   const { loading, error, products} = productList;
 
   const productCreate = useSelector((state) => state.productCreate);
@@ -72,7 +72,7 @@ export default function ProductListScreen(props) {
                     type="button"
                     className="small"
                     onClick={() =>
-                    props.history.push(`/products/${product._id}/edit`)
+                    props.history.push(`/product/${product._id}/edit`)
                   }
                   >
                     Edit
