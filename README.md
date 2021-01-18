@@ -67,3 +67,5 @@ Finished Part 37, but since I can't login to an Admin account, I can't really ve
 I posted a question to the Udemy instructor on how to create new admin accounts, hopefully he'll respond before I finish this section. 
 
 Finished Part 38, still no luck with getting the admin to work. :(
+
+AAHA!!! figured out the Admin Problem. I had to go into the MongoDB compass and....while the admin account I created I couldn't remeber the password for...but I was able in Compass to assign the admin to another user account and that did the trick. Admin features now fully work. :)
