@@ -112,7 +112,9 @@ function App() {
           path="/" 
           component={ProductListScreen}> 
           </AdminRoute>
-          <AdminRoute path="/orderlist" component={OrderListScreen}>
+          <AdminRoute 
+          path="/orderlist" 
+          component={OrderListScreen}>
             
           </AdminRoute>
         <Route path="/" component={HomeScreen} exact></Route>

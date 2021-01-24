@@ -77,3 +77,5 @@ And Troubleshooted, had a products instead of product in the bottom of the retur
 Finished Part 40 - NO ERRORS -  WOHOOO!!!
 
 Finsihed Part 41, and therefor Finished Section 11.
+
+Finished Section 12, onwards to Section 13, Deploying the Site!
